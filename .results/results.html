@@ -1,0 +1,728 @@
+<html lang="en"><head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <title>ccbp test reporter</title>
+            <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+            <link rel="preconnect" href="https://fonts.gstatic.com">
+	        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+            <script src="https://kit.fontawesome.com/522ee478c4.js" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/alpinejs/2.3.0/alpine.js"></script>
+            <script src="js/view.js"></script>
+        </head><body><div id="test-results">{
+  &quot;numFailedTestSuites&quot;: 2,
+  &quot;numFailedTests&quot;: 33,
+  &quot;numPassedTestSuites&quot;: 0,
+  &quot;numPassedTests&quot;: 0,
+  &quot;numPendingTestSuites&quot;: 0,
+  &quot;numPendingTests&quot;: 0,
+  &quot;numRuntimeErrorTestSuites&quot;: 2,
+  &quot;numTodoTests&quot;: 0,
+  &quot;numTotalTestSuites&quot;: 2,
+  &quot;numTotalTests&quot;: 33,
+  &quot;openHandles&quot;: [],
+  &quot;snapshot&quot;: {
+    &quot;added&quot;: 0,
+    &quot;didUpdate&quot;: false,
+    &quot;failure&quot;: false,
+    &quot;filesAdded&quot;: 0,
+    &quot;filesRemoved&quot;: 0,
+    &quot;filesRemovedList&quot;: [],
+    &quot;filesUnmatched&quot;: 0,
+    &quot;filesUpdated&quot;: 0,
+    &quot;matched&quot;: 0,
+    &quot;total&quot;: 0,
+    &quot;unchecked&quot;: 0,
+    &quot;uncheckedKeysByFile&quot;: [],
+    &quot;unmatched&quot;: 0,
+    &quot;updated&quot;: 0
+  },
+  &quot;startTime&quot;: 1705565929680,
+  &quot;success&quot;: false,
+  &quot;testResults&quot;: [
+    {
+      &quot;failureMessage&quot;: &quot;  ● Test suite failed to run\n\n    Cannot find module &#x27;slick-carousel/slick/slick.css&#x27; from &#x27;src/components/MenuList/MenuList.jsx&#x27;\n\n    Require stack:\n      src/components/MenuList/MenuList.jsx\n      src/App.js\n      src/App.test.js\n\n      2 | import { useState } from \&quot;react\&quot;;\n      3 | import { useEffect } from \&quot;react\&quot;;\n    &gt; 4 | import \&quot;slick-carousel/slick/slick.css\&quot;;\n        | ^\n      5 | import \&quot;slick-carousel/slick/slick-theme.css\&quot;;\n      6 | import Slider from \&quot;react-slick\&quot;;\n      7 | import { useDispatch, useSelector } from \&quot;react-redux\&quot;;\n\n      at Resolver.resolveModule (node_modules/.pnpm/jest-resolve@26.6.2/node_modules/jest-resolve/build/index.js:306:11)\n      at Object.&lt;anonymous&gt; (src/components/MenuList/MenuList.jsx:4:1)\n&quot;,
+      &quot;leaks&quot;: false,
+      &quot;numFailingTests&quot;: 0,
+      &quot;numPassingTests&quot;: 0,
+      &quot;numPendingTests&quot;: 0,
+      &quot;numTodoTests&quot;: 0,
+      &quot;openHandles&quot;: [],
+      &quot;perfStats&quot;: {
+        &quot;end&quot;: 0,
+        &quot;runtime&quot;: 0,
+        &quot;slow&quot;: false,
+        &quot;start&quot;: 0
+      },
+      &quot;skipped&quot;: false,
+      &quot;snapshot&quot;: {
+        &quot;added&quot;: 0,
+        &quot;fileDeleted&quot;: false,
+        &quot;matched&quot;: 0,
+        &quot;unchecked&quot;: 0,
+        &quot;uncheckedKeys&quot;: [],
+        &quot;unmatched&quot;: 0,
+        &quot;updated&quot;: 0
+      },
+      &quot;testExecError&quot;: &quot;Cannot find module &#x27;slick-carousel/slick/slick.css&#x27; from &#x27;src/components/MenuList/MenuList.jsx&#x27;\n\nRequire stack:\n  src/components/MenuList/MenuList.jsx\n  src/App.js\n  src/App.test.js\n&quot;,
+      &quot;testFilePath&quot;: &quot;/home/workspace/.tmp/reactjs/coding-practices/restaurantApp/src/App.test.js&quot;,
+      &quot;testResults&quot;: []
+    },
+    {
+      &quot;failureMessage&quot;: &quot;  ● Test suite failed to run\n\n    Cannot find module &#x27;slick-carousel/slick/slick.css&#x27; from &#x27;src/components/MenuList/MenuList.jsx&#x27;\n\n    Require stack:\n      src/components/MenuList/MenuList.jsx\n      src/App.js\n      src/__tests__/App.js\n\n      2 | import { useState } from \&quot;react\&quot;;\n      3 | import { useEffect } from \&quot;react\&quot;;\n    &gt; 4 | import \&quot;slick-carousel/slick/slick.css\&quot;;\n        | ^\n      5 | import \&quot;slick-carousel/slick/slick-theme.css\&quot;;\n      6 | import Slider from \&quot;react-slick\&quot;;\n      7 | import { useDispatch, useSelector } from \&quot;react-redux\&quot;;\n\n      at Resolver.resolveModule (node_modules/.pnpm/jest-resolve@26.6.2/node_modules/jest-resolve/build/index.js:306:11)\n      at Object.&lt;anonymous&gt; (src/components/MenuList/MenuList.jsx:4:1)\n&quot;,
+      &quot;leaks&quot;: false,
+      &quot;numFailingTests&quot;: 33,
+      &quot;numPassingTests&quot;: 0,
+      &quot;numPendingTests&quot;: 0,
+      &quot;numTodoTests&quot;: 0,
+      &quot;openHandles&quot;: [],
+      &quot;perfStats&quot;: {
+        &quot;end&quot;: 0,
+        &quot;runtime&quot;: 0,
+        &quot;slow&quot;: false,
+        &quot;start&quot;: 0
+      },
+      &quot;skipped&quot;: false,
+      &quot;snapshot&quot;: {
+        &quot;added&quot;: 0,
+        &quot;fileDeleted&quot;: false,
+        &quot;matched&quot;: 0,
+        &quot;unchecked&quot;: 0,
+        &quot;uncheckedKeys&quot;: [],
+        &quot;unmatched&quot;: 0,
+        &quot;updated&quot;: 0
+      },
+      &quot;testExecError&quot;: &quot;Cannot find module &#x27;slick-carousel/slick/slick.css&#x27; from &#x27;src/components/MenuList/MenuList.jsx&#x27;\n\nRequire stack:\n  src/components/MenuList/MenuList.jsx\n  src/App.js\n  src/__tests__/App.js\n&quot;,
+      &quot;testFilePath&quot;: &quot;/home/workspace/.tmp/reactjs/coding-practices/restaurantApp/src/__tests__/App.js&quot;,
+      &quot;testResults&quot;: [
+        {
+          &quot;ancestorTitles&quot;: [
+            &quot;restaurant App tests&quot;
+          ],
+          &quot;duration&quot;: 0,
+          &quot;failureDetails&quot;: [
+            &quot;&quot;
+          ],
+          &quot;failureMessages&quot;: [
+            &quot;&quot;
+          ],
+          &quot;fullName&quot;: &quot;restaurant App tests When the Page is opened, an HTTP GET request should be made to the given dishesApiUrl to get the list of dishes&quot;,
+          &quot;invocations&quot;: 1,
+          &quot;location&quot;: null,
+          &quot;numPassingAsserts&quot;: 0,
+          &quot;status&quot;: &quot;failed&quot;,
+          &quot;title&quot;: &quot;When the Page is opened, an HTTP GET request should be made to the given dishesApiUrl to get the list of dishes&quot;,
+          &quot;id&quot;: &quot;RJSCPLTJNZ_TEST_1&quot;
+        },
+        {
+          &quot;ancestorTitles&quot;: [
+            &quot;restaurant App tests&quot;
+          ],
+          &quot;duration&quot;: 0,
+          &quot;failureDetails&quot;: [
+            &quot;&quot;
+          ],
+          &quot;failureMessages&quot;: [
+            &quot;&quot;
+          ],
+          &quot;fullName&quot;: &quot;restaurant App tests When the HTTP GET request is successful, then the page should consist of an HTML heading element with text content as \&quot;UNI Resto Cafe\&quot; the value of the key \&quot;restaurant_name\&quot; received from the response&quot;,
+          &quot;invocations&quot;: 1,
+          &quot;location&quot;: null,
+          &quot;numPassingAsserts&quot;: 0,
+          &quot;status&quot;: &quot;failed&quot;,
+          &quot;title&quot;: &quot;When the HTTP GET request is successful, then the page should consist of an HTML heading element with text content as \&quot;UNI Resto Cafe\&quot; the value of the key \&quot;restaurant_name\&quot; received from the response&quot;,
+          &quot;id&quot;: &quot;RJSCPLTJNZ_TEST_2&quot;
+        },
+        {
+          &quot;ancestorTitles&quot;: [
+            &quot;restaurant App tests&quot;
+          ],
+          &quot;duration&quot;: 0,
+          &quot;failureDetails&quot;: [
+            &quot;&quot;
+          ],
+          &quot;failureMessages&quot;: [
+            &quot;&quot;
+          ],
+          &quot;fullName&quot;: &quot;restaurant App tests When the HTTP GET request is successful, then the page should consist of an HTML paragraph element with text content as \&quot;My Orders\&quot; in the Header&quot;,
+          &quot;invocations&quot;: 1,
+          &quot;location&quot;: null,
+          &quot;numPassingAsserts&quot;: 0,
+          &quot;status&quot;: &quot;failed&quot;,
+          &quot;title&quot;: &quot;When the HTTP GET request is successful, then the page should consist of an HTML paragraph element with text content as \&quot;My Orders\&quot; in the Header&quot;,
+          &quot;id&quot;: &quot;RJSCPLTJNZ_TEST_3&quot;
+        },
+        {
+          &quot;ancestorTitles&quot;: [
+            &quot;restaurant App tests&quot;
+          ],
+          &quot;duration&quot;: 0,
+          &quot;failureDetails&quot;: [
+            &quot;&quot;
+          ],
+          &quot;failureMessages&quot;: [
+            &quot;&quot;
+          ],
+          &quot;fullName&quot;: &quot;restaurant App tests When the HTTP GET request is successful, then the page should consist of HTML button elements to display the list of menu categories with text content of each button corresponding to the value of the key \&quot;menu_category\&quot; received from the response within the \&quot;table_menu_list\&quot;&quot;,
+          &quot;invocations&quot;: 1,
+          &quot;location&quot;: null,
+          &quot;numPassingAsserts&quot;: 0,
+          &quot;status&quot;: &quot;failed&quot;,
+          &quot;title&quot;: &quot;When the HTTP GET request is successful, then the page should consist of HTML button elements to display the list of menu categories with text content of each button corresponding to the value of the key \&quot;menu_category\&quot; received from the response within the \&quot;table_menu_list\&quot;&quot;,
+          &quot;id&quot;: &quot;RJSCPLTJNZ_TEST_4&quot;
+        },
+        {
+          &quot;ancestorTitles&quot;: [
+            &quot;restaurant App tests&quot;
+          ],
+          &quot;duration&quot;: 0,
+          &quot;failureDetails&quot;: [
+            &quot;&quot;
+          ],
+          &quot;failureMessages&quot;: [
+            &quot;&quot;
+          ],
+          &quot;fullName&quot;: &quot;restaurant App tests When the HTTP GET request is successful and the active \&quot;menu_category\&quot; is \&quot;Salads and Soup\&quot;, then the page should consist of an HTML heading element with text content as the value of the key \&quot;dish_name\&quot; received from the response within \&quot;category_dishes\&quot; list&quot;,
+          &quot;invocations&quot;: 1,
+          &quot;location&quot;: null,
+          &quot;numPassingAsserts&quot;: 0,
+          &quot;status&quot;: &quot;failed&quot;,
+          &quot;title&quot;: &quot;When the HTTP GET request is successful and the active \&quot;menu_category\&quot; is \&quot;Salads and Soup\&quot;, then the page should consist of an HTML heading element with text content as the value of the key \&quot;dish_name\&quot; received from the response within \&quot;category_dishes\&quot; list&quot;,
+          &quot;id&quot;: &quot;RJSCPLTJNZ_TEST_5&quot;
+        },
+        {
+          &quot;ancestorTitles&quot;: [
+            &quot;restaurant App tests&quot;
+          ],
+          &quot;duration&quot;: 0,
+          &quot;failureDetails&quot;: [
+            &quot;&quot;
+          ],
+          &quot;failureMessages&quot;: [
+            &quot;&quot;
+          ],
+          &quot;fullName&quot;: &quot;restaurant App tests When the HTTP GET request is successful and the active \&quot;menu_category\&quot; is \&quot;Salads and Soup\&quot;, then the page should consist of an HTML paragraph element with text content as the value of the key \&quot;dish_currency\&quot; and \&quot;dish_price\&quot; received from the response within \&quot;category_dishes\&quot; list&quot;,
+          &quot;invocations&quot;: 1,
+          &quot;location&quot;: null,
+          &quot;numPassingAsserts&quot;: 0,
+          &quot;status&quot;: &quot;failed&quot;,
+          &quot;title&quot;: &quot;When the HTTP GET request is successful and the active \&quot;menu_category\&quot; is \&quot;Salads and Soup\&quot;, then the page should consist of an HTML paragraph element with text content as the value of the key \&quot;dish_currency\&quot; and \&quot;dish_price\&quot; received from the response within \&quot;category_dishes\&quot; list&quot;,
+          &quot;id&quot;: &quot;RJSCPLTJNZ_TEST_6&quot;
+        },
+        {
+          &quot;ancestorTitles&quot;: [
+            &quot;restaurant App tests&quot;
+          ],
+          &quot;duration&quot;: 0,
+          &quot;failureDetails&quot;: [
+            &quot;&quot;
+          ],
+          &quot;failureMessages&quot;: [
+            &quot;&quot;
+          ],
+          &quot;fullName&quot;: &quot;restaurant App tests When the HTTP GET request is successful and the active \&quot;menu_category\&quot; is \&quot;Salads and Soup\&quot;, then the page should consist of an HTML paragraph element with text content as the value of the key \&quot;dish_description\&quot; received from the response within \&quot;category_dishes\&quot; list&quot;,
+          &quot;invocations&quot;: 1,
+          &quot;location&quot;: null,
+          &quot;numPassingAsserts&quot;: 0,
+          &quot;status&quot;: &quot;failed&quot;,
+          &quot;title&quot;: &quot;When the HTTP GET request is successful and the active \&quot;menu_category\&quot; is \&quot;Salads and Soup\&quot;, then the page should consist of an HTML paragraph element with text content as the value of the key \&quot;dish_description\&quot; received from the response within \&quot;category_dishes\&quot; list&quot;,
+          &quot;id&quot;: &quot;RJSCPLTJNZ_TEST_7&quot;
+        },
+        {
+          &quot;ancestorTitles&quot;: [
+            &quot;restaurant App tests&quot;
+          ],
+          &quot;duration&quot;: 0,
+          &quot;failureDetails&quot;: [
+            &quot;&quot;
+          ],
+          &quot;failureMessages&quot;: [
+            &quot;&quot;
+          ],
+          &quot;fullName&quot;: &quot;restaurant App tests When the HTTP GET request is successful and the active \&quot;menu_category\&quot; is \&quot;Salads and Soup\&quot;, then the page should consist of an HTML paragraph element with text content as the value of the key \&quot;dish_calories\&quot; received from the response within \&quot;category_dishes\&quot; list&quot;,
+          &quot;invocations&quot;: 1,
+          &quot;location&quot;: null,
+          &quot;numPassingAsserts&quot;: 0,
+          &quot;status&quot;: &quot;failed&quot;,
+          &quot;title&quot;: &quot;When the HTTP GET request is successful and the active \&quot;menu_category\&quot; is \&quot;Salads and Soup\&quot;, then the page should consist of an HTML paragraph element with text content as the value of the key \&quot;dish_calories\&quot; received from the response within \&quot;category_dishes\&quot; list&quot;,
+          &quot;id&quot;: &quot;RJSCPLTJNZ_TEST_8&quot;
+        },
+        {
+          &quot;ancestorTitles&quot;: [
+            &quot;restaurant App tests&quot;
+          ],
+          &quot;duration&quot;: 0,
+          &quot;failureDetails&quot;: [
+            &quot;&quot;
+          ],
+          &quot;failureMessages&quot;: [
+            &quot;&quot;
+          ],
+          &quot;fullName&quot;: &quot;restaurant App tests When the HTTP GET request is successful and the active \&quot;menu_category\&quot; is \&quot;Salads and Soup\&quot;, then the page should consist of an HTML image element with src as the value of the key \&quot;dish_image\&quot; received from the response within \&quot;category_dishes\&quot; list&quot;,
+          &quot;invocations&quot;: 1,
+          &quot;location&quot;: null,
+          &quot;numPassingAsserts&quot;: 0,
+          &quot;status&quot;: &quot;failed&quot;,
+          &quot;title&quot;: &quot;When the HTTP GET request is successful and the active \&quot;menu_category\&quot; is \&quot;Salads and Soup\&quot;, then the page should consist of an HTML image element with src as the value of the key \&quot;dish_image\&quot; received from the response within \&quot;category_dishes\&quot; list&quot;,
+          &quot;id&quot;: &quot;RJSCPLTJNZ_TEST_9&quot;
+        },
+        {
+          &quot;ancestorTitles&quot;: [
+            &quot;restaurant App tests&quot;
+          ],
+          &quot;duration&quot;: 0,
+          &quot;failureDetails&quot;: [
+            &quot;&quot;
+          ],
+          &quot;failureMessages&quot;: [
+            &quot;&quot;
+          ],
+          &quot;fullName&quot;: &quot;restaurant App tests When the HTTP GET request is successful, then the page should initially consist of an HTML paragraph elements to display the count of each dish quantity with text content as \&quot;0\&quot;&quot;,
+          &quot;invocations&quot;: 1,
+          &quot;location&quot;: null,
+          &quot;numPassingAsserts&quot;: 0,
+          &quot;status&quot;: &quot;failed&quot;,
+          &quot;title&quot;: &quot;When the HTTP GET request is successful, then the page should initially consist of an HTML paragraph elements to display the count of each dish quantity with text content as \&quot;0\&quot;&quot;,
+          &quot;id&quot;: &quot;RJSCPLTJNZ_TEST_10&quot;
+        },
+        {
+          &quot;ancestorTitles&quot;: [
+            &quot;restaurant App tests&quot;
+          ],
+          &quot;duration&quot;: 0,
+          &quot;failureDetails&quot;: [
+            &quot;&quot;
+          ],
+          &quot;failureMessages&quot;: [
+            &quot;&quot;
+          ],
+          &quot;fullName&quot;: &quot;restaurant App tests When the HTTP GET request is successful, then the page should consist of an HTML button element with text content as \&quot;-\&quot; which refers decrement&quot;,
+          &quot;invocations&quot;: 1,
+          &quot;location&quot;: null,
+          &quot;numPassingAsserts&quot;: 0,
+          &quot;status&quot;: &quot;failed&quot;,
+          &quot;title&quot;: &quot;When the HTTP GET request is successful, then the page should consist of an HTML button element with text content as \&quot;-\&quot; which refers decrement&quot;,
+          &quot;id&quot;: &quot;RJSCPLTJNZ_TEST_11&quot;
+        },
+        {
+          &quot;ancestorTitles&quot;: [
+            &quot;restaurant App tests&quot;
+          ],
+          &quot;duration&quot;: 0,
+          &quot;failureDetails&quot;: [
+            &quot;&quot;
+          ],
+          &quot;failureMessages&quot;: [
+            &quot;&quot;
+          ],
+          &quot;fullName&quot;: &quot;restaurant App tests When the HTTP GET request is successful, then the page should consist of an HTML button element with text content as \&quot;+\&quot; which refers increment&quot;,
+          &quot;invocations&quot;: 1,
+          &quot;location&quot;: null,
+          &quot;numPassingAsserts&quot;: 0,
+          &quot;status&quot;: &quot;failed&quot;,
+          &quot;title&quot;: &quot;When the HTTP GET request is successful, then the page should consist of an HTML button element with text content as \&quot;+\&quot; which refers increment&quot;,
+          &quot;id&quot;: &quot;RJSCPLTJNZ_TEST_12&quot;
+        },
+        {
+          &quot;ancestorTitles&quot;: [
+            &quot;restaurant App tests&quot;
+          ],
+          &quot;duration&quot;: 0,
+          &quot;failureDetails&quot;: [
+            &quot;&quot;
+          ],
+          &quot;failureMessages&quot;: [
+            &quot;&quot;
+          ],
+          &quot;fullName&quot;: &quot;restaurant App tests When the HTTP GET request is successful and the active \&quot;menu_category\&quot; is \&quot;From the Barnyard\&quot;, then the page should consist of an HTML heading element with text content as the value of the key \&quot;dish_name\&quot; received from the response within \&quot;category_dishes\&quot; list&quot;,
+          &quot;invocations&quot;: 1,
+          &quot;location&quot;: null,
+          &quot;numPassingAsserts&quot;: 0,
+          &quot;status&quot;: &quot;failed&quot;,
+          &quot;title&quot;: &quot;When the HTTP GET request is successful and the active \&quot;menu_category\&quot; is \&quot;From the Barnyard\&quot;, then the page should consist of an HTML heading element with text content as the value of the key \&quot;dish_name\&quot; received from the response within \&quot;category_dishes\&quot; list&quot;,
+          &quot;id&quot;: &quot;RJSCPLTJNZ_TEST_13&quot;
+        },
+        {
+          &quot;ancestorTitles&quot;: [
+            &quot;restaurant App tests&quot;
+          ],
+          &quot;duration&quot;: 0,
+          &quot;failureDetails&quot;: [
+            &quot;&quot;
+          ],
+          &quot;failureMessages&quot;: [
+            &quot;&quot;
+          ],
+          &quot;fullName&quot;: &quot;restaurant App tests When the HTTP GET request is successful and the active \&quot;menu_category\&quot; is \&quot;From the Barnyard\&quot;, then the page should consist of an HTML paragraph element with text content as the value of the key \&quot;dish_currency\&quot; and \&quot;dish_price\&quot; received from the response within \&quot;category_dishes\&quot; list&quot;,
+          &quot;invocations&quot;: 1,
+          &quot;location&quot;: null,
+          &quot;numPassingAsserts&quot;: 0,
+          &quot;status&quot;: &quot;failed&quot;,
+          &quot;title&quot;: &quot;When the HTTP GET request is successful and the active \&quot;menu_category\&quot; is \&quot;From the Barnyard\&quot;, then the page should consist of an HTML paragraph element with text content as the value of the key \&quot;dish_currency\&quot; and \&quot;dish_price\&quot; received from the response within \&quot;category_dishes\&quot; list&quot;,
+          &quot;id&quot;: &quot;RJSCPLTJNZ_TEST_14&quot;
+        },
+        {
+          &quot;ancestorTitles&quot;: [
+            &quot;restaurant App tests&quot;
+          ],
+          &quot;duration&quot;: 0,
+          &quot;failureDetails&quot;: [
+            &quot;&quot;
+          ],
+          &quot;failureMessages&quot;: [
+            &quot;&quot;
+          ],
+          &quot;fullName&quot;: &quot;restaurant App tests When the HTTP GET request is successful and the active \&quot;menu_category\&quot; is \&quot;From the Barnyard\&quot;, then the page should consist of an HTML paragraph element with text content as the value of the key \&quot;dish_description\&quot; received from the response within \&quot;category_dishes\&quot; list&quot;,
+          &quot;invocations&quot;: 1,
+          &quot;location&quot;: null,
+          &quot;numPassingAsserts&quot;: 0,
+          &quot;status&quot;: &quot;failed&quot;,
+          &quot;title&quot;: &quot;When the HTTP GET request is successful and the active \&quot;menu_category\&quot; is \&quot;From the Barnyard\&quot;, then the page should consist of an HTML paragraph element with text content as the value of the key \&quot;dish_description\&quot; received from the response within \&quot;category_dishes\&quot; list&quot;,
+          &quot;id&quot;: &quot;RJSCPLTJNZ_TEST_15&quot;
+        },
+        {
+          &quot;ancestorTitles&quot;: [
+            &quot;restaurant App tests&quot;
+          ],
+          &quot;duration&quot;: 0,
+          &quot;failureDetails&quot;: [
+            &quot;&quot;
+          ],
+          &quot;failureMessages&quot;: [
+            &quot;&quot;
+          ],
+          &quot;fullName&quot;: &quot;restaurant App tests When the HTTP GET request is successful and the active \&quot;menu_category\&quot; is \&quot;From the Barnyard\&quot;, then the page should consist of an HTML paragraph element with text content as the value of the key \&quot;dish_calories\&quot; received from the response within \&quot;category_dishes\&quot; list&quot;,
+          &quot;invocations&quot;: 1,
+          &quot;location&quot;: null,
+          &quot;numPassingAsserts&quot;: 0,
+          &quot;status&quot;: &quot;failed&quot;,
+          &quot;title&quot;: &quot;When the HTTP GET request is successful and the active \&quot;menu_category\&quot; is \&quot;From the Barnyard\&quot;, then the page should consist of an HTML paragraph element with text content as the value of the key \&quot;dish_calories\&quot; received from the response within \&quot;category_dishes\&quot; list&quot;,
+          &quot;id&quot;: &quot;RJSCPLTJNZ_TEST_16&quot;
+        },
+        {
+          &quot;ancestorTitles&quot;: [
+            &quot;restaurant App tests&quot;
+          ],
+          &quot;duration&quot;: 0,
+          &quot;failureDetails&quot;: [
+            &quot;&quot;
+          ],
+          &quot;failureMessages&quot;: [
+            &quot;&quot;
+          ],
+          &quot;fullName&quot;: &quot;restaurant App tests When the HTTP GET request is successful and the active \&quot;menu_category\&quot; is \&quot;From the Barnyard\&quot;, then the page should consist of an HTML image element with src as the value of the key \&quot;dish_image\&quot; received from the response within \&quot;category_dishes\&quot; list&quot;,
+          &quot;invocations&quot;: 1,
+          &quot;location&quot;: null,
+          &quot;numPassingAsserts&quot;: 0,
+          &quot;status&quot;: &quot;failed&quot;,
+          &quot;title&quot;: &quot;When the HTTP GET request is successful and the active \&quot;menu_category\&quot; is \&quot;From the Barnyard\&quot;, then the page should consist of an HTML image element with src as the value of the key \&quot;dish_image\&quot; received from the response within \&quot;category_dishes\&quot; list&quot;,
+          &quot;id&quot;: &quot;RJSCPLTJNZ_TEST_17&quot;
+        },
+        {
+          &quot;ancestorTitles&quot;: [
+            &quot;restaurant App tests&quot;
+          ],
+          &quot;duration&quot;: 0,
+          &quot;failureDetails&quot;: [
+            &quot;&quot;
+          ],
+          &quot;failureMessages&quot;: [
+            &quot;&quot;
+          ],
+          &quot;fullName&quot;: &quot;restaurant App tests When the HTTP GET request is successful and the active \&quot;menu_category\&quot; is \&quot;From the Hen House\&quot;, then the page should initially consist of an HTML paragraph elements to display the count of each dish quantity with text content as \&quot;0\&quot;&quot;,
+          &quot;invocations&quot;: 1,
+          &quot;location&quot;: null,
+          &quot;numPassingAsserts&quot;: 0,
+          &quot;status&quot;: &quot;failed&quot;,
+          &quot;title&quot;: &quot;When the HTTP GET request is successful and the active \&quot;menu_category\&quot; is \&quot;From the Hen House\&quot;, then the page should initially consist of an HTML paragraph elements to display the count of each dish quantity with text content as \&quot;0\&quot;&quot;,
+          &quot;id&quot;: &quot;RJSCPLTJNZ_TEST_18&quot;
+        },
+        {
+          &quot;ancestorTitles&quot;: [
+            &quot;restaurant App tests&quot;
+          ],
+          &quot;duration&quot;: 0,
+          &quot;failureDetails&quot;: [
+            &quot;&quot;
+          ],
+          &quot;failureMessages&quot;: [
+            &quot;&quot;
+          ],
+          &quot;fullName&quot;: &quot;restaurant App tests When the HTTP GET request is successful and the active \&quot;menu_category\&quot; is \&quot;From the Hen House\&quot;, then the page should consist of an HTML button element with text content as \&quot;-\&quot; which refers decrement&quot;,
+          &quot;invocations&quot;: 1,
+          &quot;location&quot;: null,
+          &quot;numPassingAsserts&quot;: 0,
+          &quot;status&quot;: &quot;failed&quot;,
+          &quot;title&quot;: &quot;When the HTTP GET request is successful and the active \&quot;menu_category\&quot; is \&quot;From the Hen House\&quot;, then the page should consist of an HTML button element with text content as \&quot;-\&quot; which refers decrement&quot;,
+          &quot;id&quot;: &quot;RJSCPLTJNZ_TEST_19&quot;
+        },
+        {
+          &quot;ancestorTitles&quot;: [
+            &quot;restaurant App tests&quot;
+          ],
+          &quot;duration&quot;: 0,
+          &quot;failureDetails&quot;: [
+            &quot;&quot;
+          ],
+          &quot;failureMessages&quot;: [
+            &quot;&quot;
+          ],
+          &quot;fullName&quot;: &quot;restaurant App tests When the HTTP GET request is successful and the active \&quot;menu_category\&quot; is \&quot;From the Hen House\&quot;, then the page should consist of an HTML button element with text content as \&quot;+\&quot; which refers increment&quot;,
+          &quot;invocations&quot;: 1,
+          &quot;location&quot;: null,
+          &quot;numPassingAsserts&quot;: 0,
+          &quot;status&quot;: &quot;failed&quot;,
+          &quot;title&quot;: &quot;When the HTTP GET request is successful and the active \&quot;menu_category\&quot; is \&quot;From the Hen House\&quot;, then the page should consist of an HTML button element with text content as \&quot;+\&quot; which refers increment&quot;,
+          &quot;id&quot;: &quot;RJSCPLTJNZ_TEST_20&quot;
+        },
+        {
+          &quot;ancestorTitles&quot;: [
+            &quot;restaurant App tests&quot;
+          ],
+          &quot;duration&quot;: 0,
+          &quot;failureDetails&quot;: [
+            &quot;&quot;
+          ],
+          &quot;failureMessages&quot;: [
+            &quot;&quot;
+          ],
+          &quot;fullName&quot;: &quot;restaurant App tests When the HTTP GET request is successful and the active \&quot;menu_category\&quot; is \&quot;Fresh From The Sea\&quot;, then the page should consist of an HTML heading element with text content as the value of the key \&quot;dish_name\&quot; received from the response within \&quot;category_dishes\&quot; list&quot;,
+          &quot;invocations&quot;: 1,
+          &quot;location&quot;: null,
+          &quot;numPassingAsserts&quot;: 0,
+          &quot;status&quot;: &quot;failed&quot;,
+          &quot;title&quot;: &quot;When the HTTP GET request is successful and the active \&quot;menu_category\&quot; is \&quot;Fresh From The Sea\&quot;, then the page should consist of an HTML heading element with text content as the value of the key \&quot;dish_name\&quot; received from the response within \&quot;category_dishes\&quot; list&quot;,
+          &quot;id&quot;: &quot;RJSCPLTJNZ_TEST_21&quot;
+        },
+        {
+          &quot;ancestorTitles&quot;: [
+            &quot;restaurant App tests&quot;
+          ],
+          &quot;duration&quot;: 0,
+          &quot;failureDetails&quot;: [
+            &quot;&quot;
+          ],
+          &quot;failureMessages&quot;: [
+            &quot;&quot;
+          ],
+          &quot;fullName&quot;: &quot;restaurant App tests When the HTTP GET request is successful and the active \&quot;menu_category\&quot; is \&quot;Biryani\&quot;, then the page should consist of an HTML heading element with text content as the value of the key \&quot;dish_name\&quot; received from the response within \&quot;category_dishes\&quot; list&quot;,
+          &quot;invocations&quot;: 1,
+          &quot;location&quot;: null,
+          &quot;numPassingAsserts&quot;: 0,
+          &quot;status&quot;: &quot;failed&quot;,
+          &quot;title&quot;: &quot;When the HTTP GET request is successful and the active \&quot;menu_category\&quot; is \&quot;Biryani\&quot;, then the page should consist of an HTML heading element with text content as the value of the key \&quot;dish_name\&quot; received from the response within \&quot;category_dishes\&quot; list&quot;,
+          &quot;id&quot;: &quot;RJSCPLTJNZ_TEST_22&quot;
+        },
+        {
+          &quot;ancestorTitles&quot;: [
+            &quot;restaurant App tests&quot;
+          ],
+          &quot;duration&quot;: 0,
+          &quot;failureDetails&quot;: [
+            &quot;&quot;
+          ],
+          &quot;failureMessages&quot;: [
+            &quot;&quot;
+          ],
+          &quot;fullName&quot;: &quot;restaurant App tests When the HTTP GET request is successful and the active \&quot;menu_category\&quot; is \&quot;Fast Food\&quot;, then the page should consist of an HTML paragraph element with text content as \&quot;Customizations available\&quot; as the key \&quot;addonCat\&quot; has the values received from the response&quot;,
+          &quot;invocations&quot;: 1,
+          &quot;location&quot;: null,
+          &quot;numPassingAsserts&quot;: 0,
+          &quot;status&quot;: &quot;failed&quot;,
+          &quot;title&quot;: &quot;When the HTTP GET request is successful and the active \&quot;menu_category\&quot; is \&quot;Fast Food\&quot;, then the page should consist of an HTML paragraph element with text content as \&quot;Customizations available\&quot; as the key \&quot;addonCat\&quot; has the values received from the response&quot;,
+          &quot;id&quot;: &quot;RJSCPLTJNZ_TEST_23&quot;
+        },
+        {
+          &quot;ancestorTitles&quot;: [
+            &quot;restaurant App tests&quot;
+          ],
+          &quot;duration&quot;: 0,
+          &quot;failureDetails&quot;: [
+            &quot;&quot;
+          ],
+          &quot;failureMessages&quot;: [
+            &quot;&quot;
+          ],
+          &quot;fullName&quot;: &quot;restaurant App tests When the HTTP GET request is successful and the active \&quot;menu_category\&quot; is \&quot;Biryani\&quot;, then the page should not consist of an HTML paragraph element with text content as \&quot;Customizations available\&quot; as the key \&quot;addonCat\&quot; has no values received from the response &quot;,
+          &quot;invocations&quot;: 1,
+          &quot;location&quot;: null,
+          &quot;numPassingAsserts&quot;: 0,
+          &quot;status&quot;: &quot;failed&quot;,
+          &quot;title&quot;: &quot;When the HTTP GET request is successful and the active \&quot;menu_category\&quot; is \&quot;Biryani\&quot;, then the page should not consist of an HTML paragraph element with text content as \&quot;Customizations available\&quot; as the key \&quot;addonCat\&quot; has no values received from the response &quot;,
+          &quot;id&quot;: &quot;RJSCPLTJNZ_TEST_24&quot;
+        },
+        {
+          &quot;ancestorTitles&quot;: [
+            &quot;restaurant App tests&quot;
+          ],
+          &quot;duration&quot;: 0,
+          &quot;failureDetails&quot;: [
+            &quot;&quot;
+          ],
+          &quot;failureMessages&quot;: [
+            &quot;&quot;
+          ],
+          &quot;fullName&quot;: &quot;restaurant App tests When the HTTP GET request is successful and the active \&quot;menu_category\&quot; is \&quot;Biryani\&quot;, then the page should consist of an HTML paragraph element with text content as \&quot;Not available\&quot; as one of the keys \&quot;dish_Availability\&quot; has the value \&quot;false\&quot; received from the response&quot;,
+          &quot;invocations&quot;: 1,
+          &quot;location&quot;: null,
+          &quot;numPassingAsserts&quot;: 0,
+          &quot;status&quot;: &quot;failed&quot;,
+          &quot;title&quot;: &quot;When the HTTP GET request is successful and the active \&quot;menu_category\&quot; is \&quot;Biryani\&quot;, then the page should consist of an HTML paragraph element with text content as \&quot;Not available\&quot; as one of the keys \&quot;dish_Availability\&quot; has the value \&quot;false\&quot; received from the response&quot;,
+          &quot;id&quot;: &quot;RJSCPLTJNZ_TEST_25&quot;
+        },
+        {
+          &quot;ancestorTitles&quot;: [
+            &quot;restaurant App tests&quot;
+          ],
+          &quot;duration&quot;: 0,
+          &quot;failureDetails&quot;: [
+            &quot;&quot;
+          ],
+          &quot;failureMessages&quot;: [
+            &quot;&quot;
+          ],
+          &quot;fullName&quot;: &quot;restaurant App tests When the HTTP GET request is successful and the active \&quot;menu_category\&quot; is \&quot;Fast Food\&quot;, then the page should not consist of an HTML paragraph element with text content as \&quot;Not available\&quot; as all \&quot;dish_Availability\&quot; keys has the value \&quot;true\&quot; received from the response&quot;,
+          &quot;invocations&quot;: 1,
+          &quot;location&quot;: null,
+          &quot;numPassingAsserts&quot;: 0,
+          &quot;status&quot;: &quot;failed&quot;,
+          &quot;title&quot;: &quot;When the HTTP GET request is successful and the active \&quot;menu_category\&quot; is \&quot;Fast Food\&quot;, then the page should not consist of an HTML paragraph element with text content as \&quot;Not available\&quot; as all \&quot;dish_Availability\&quot; keys has the value \&quot;true\&quot; received from the response&quot;,
+          &quot;id&quot;: &quot;RJSCPLTJNZ_TEST_26&quot;
+        },
+        {
+          &quot;ancestorTitles&quot;: [
+            &quot;restaurant App tests&quot;
+          ],
+          &quot;duration&quot;: 0,
+          &quot;failureDetails&quot;: [
+            &quot;&quot;
+          ],
+          &quot;failureMessages&quot;: [
+            &quot;&quot;
+          ],
+          &quot;fullName&quot;: &quot;restaurant App tests When the HTTP GET request is successful and the active \&quot;menu_category\&quot; is \&quot;Fresh From The Sea\&quot;, then the page should not consist of an HTML button elements with text content as \&quot;-\&quot; and \&quot;+\&quot; along with its quantity as all \&quot;dish_Availability\&quot; keys has the value \&quot;false\&quot; received from the response&quot;,
+          &quot;invocations&quot;: 1,
+          &quot;location&quot;: null,
+          &quot;numPassingAsserts&quot;: 0,
+          &quot;status&quot;: &quot;failed&quot;,
+          &quot;title&quot;: &quot;When the HTTP GET request is successful and the active \&quot;menu_category\&quot; is \&quot;Fresh From The Sea\&quot;, then the page should not consist of an HTML button elements with text content as \&quot;-\&quot; and \&quot;+\&quot; along with its quantity as all \&quot;dish_Availability\&quot; keys has the value \&quot;false\&quot; received from the response&quot;,
+          &quot;id&quot;: &quot;RJSCPLTJNZ_TEST_27&quot;
+        },
+        {
+          &quot;ancestorTitles&quot;: [
+            &quot;restaurant App tests&quot;
+          ],
+          &quot;duration&quot;: 0,
+          &quot;failureDetails&quot;: [
+            &quot;&quot;
+          ],
+          &quot;failureMessages&quot;: [
+            &quot;&quot;
+          ],
+          &quot;fullName&quot;: &quot;restaurant App tests When the HTTP GET request is successful and the active \&quot;menu_category\&quot; is \&quot;Salads and Soup\&quot;, and when the \&quot;+\&quot; button in the Page is clicked, then the particular \&quot;dish quantity\&quot; count and \&quot;cart count\&quot; should be incremented by one&quot;,
+          &quot;invocations&quot;: 1,
+          &quot;location&quot;: null,
+          &quot;numPassingAsserts&quot;: 0,
+          &quot;status&quot;: &quot;failed&quot;,
+          &quot;title&quot;: &quot;When the HTTP GET request is successful and the active \&quot;menu_category\&quot; is \&quot;Salads and Soup\&quot;, and when the \&quot;+\&quot; button in the Page is clicked, then the particular \&quot;dish quantity\&quot; count and \&quot;cart count\&quot; should be incremented by one&quot;,
+          &quot;id&quot;: &quot;RJSCPLTJNZ_TEST_28&quot;
+        },
+        {
+          &quot;ancestorTitles&quot;: [
+            &quot;restaurant App tests&quot;
+          ],
+          &quot;duration&quot;: 0,
+          &quot;failureDetails&quot;: [
+            &quot;&quot;
+          ],
+          &quot;failureMessages&quot;: [
+            &quot;&quot;
+          ],
+          &quot;fullName&quot;: &quot;restaurant App tests When the HTTP GET request is successful and the active \&quot;menu_category\&quot; is \&quot;Salads and Soup\&quot;, and when the \&quot;-\&quot; button in the Page is clicked after the \&quot;+\&quot; button is clicked, then the particular \&quot;dish quantity\&quot; count and \&quot;cart count\&quot; should be decremented by one&quot;,
+          &quot;invocations&quot;: 1,
+          &quot;location&quot;: null,
+          &quot;numPassingAsserts&quot;: 0,
+          &quot;status&quot;: &quot;failed&quot;,
+          &quot;title&quot;: &quot;When the HTTP GET request is successful and the active \&quot;menu_category\&quot; is \&quot;Salads and Soup\&quot;, and when the \&quot;-\&quot; button in the Page is clicked after the \&quot;+\&quot; button is clicked, then the particular \&quot;dish quantity\&quot; count and \&quot;cart count\&quot; should be decremented by one&quot;,
+          &quot;id&quot;: &quot;RJSCPLTJNZ_TEST_29&quot;
+        },
+        {
+          &quot;ancestorTitles&quot;: [
+            &quot;restaurant App tests&quot;
+          ],
+          &quot;duration&quot;: 0,
+          &quot;failureDetails&quot;: [
+            &quot;&quot;
+          ],
+          &quot;failureMessages&quot;: [
+            &quot;&quot;
+          ],
+          &quot;fullName&quot;: &quot;restaurant App tests When the HTTP GET request is successful and the active \&quot;menu_category\&quot; is \&quot;Salads and Soup\&quot;, and when the \&quot;-\&quot; button in the Page is clicked initially, then the \&quot;dish quantity\&quot; count or \&quot;cart count\&quot; should not be decremented by one&quot;,
+          &quot;invocations&quot;: 1,
+          &quot;location&quot;: null,
+          &quot;numPassingAsserts&quot;: 0,
+          &quot;status&quot;: &quot;failed&quot;,
+          &quot;title&quot;: &quot;When the HTTP GET request is successful and the active \&quot;menu_category\&quot; is \&quot;Salads and Soup\&quot;, and when the \&quot;-\&quot; button in the Page is clicked initially, then the \&quot;dish quantity\&quot; count or \&quot;cart count\&quot; should not be decremented by one&quot;,
+          &quot;id&quot;: &quot;RJSCPLTJNZ_TEST_30&quot;
+        },
+        {
+          &quot;ancestorTitles&quot;: [
+            &quot;restaurant App tests&quot;
+          ],
+          &quot;duration&quot;: 0,
+          &quot;failureDetails&quot;: [
+            &quot;&quot;
+          ],
+          &quot;failureMessages&quot;: [
+            &quot;&quot;
+          ],
+          &quot;fullName&quot;: &quot;restaurant App tests When the \&quot;+\&quot; and \&quot;-\&quot; buttons in the Page is clicked for multiple dishes, then the total \&quot;dish quantity\&quot; count should be displayed as the cart count&quot;,
+          &quot;invocations&quot;: 1,
+          &quot;location&quot;: null,
+          &quot;numPassingAsserts&quot;: 0,
+          &quot;status&quot;: &quot;failed&quot;,
+          &quot;title&quot;: &quot;When the \&quot;+\&quot; and \&quot;-\&quot; buttons in the Page is clicked for multiple dishes, then the total \&quot;dish quantity\&quot; count should be displayed as the cart count&quot;,
+          &quot;id&quot;: &quot;RJSCPLTJNZ_TEST_31&quot;
+        },
+        {
+          &quot;ancestorTitles&quot;: [
+            &quot;restaurant App tests&quot;
+          ],
+          &quot;duration&quot;: 0,
+          &quot;failureDetails&quot;: [
+            &quot;&quot;
+          ],
+          &quot;failureMessages&quot;: [
+            &quot;&quot;
+          ],
+          &quot;fullName&quot;: &quot;restaurant App tests When the \&quot;menu_category\&quot; is \&quot;From the Barnyard\&quot; and \&quot;+\&quot; and \&quot;-\&quot; buttons is clicked for multiple dishes, then the total \&quot;dish quantity\&quot; count should be displayed as the cart count&quot;,
+          &quot;invocations&quot;: 1,
+          &quot;location&quot;: null,
+          &quot;numPassingAsserts&quot;: 0,
+          &quot;status&quot;: &quot;failed&quot;,
+          &quot;title&quot;: &quot;When the \&quot;menu_category\&quot; is \&quot;From the Barnyard\&quot; and \&quot;+\&quot; and \&quot;-\&quot; buttons is clicked for multiple dishes, then the total \&quot;dish quantity\&quot; count should be displayed as the cart count&quot;,
+          &quot;id&quot;: &quot;RJSCPLTJNZ_TEST_32&quot;
+        },
+        {
+          &quot;ancestorTitles&quot;: [
+            &quot;restaurant App tests&quot;
+          ],
+          &quot;duration&quot;: 0,
+          &quot;failureDetails&quot;: [
+            &quot;&quot;
+          ],
+          &quot;failureMessages&quot;: [
+            &quot;&quot;
+          ],
+          &quot;fullName&quot;: &quot;restaurant App tests When the HTTP GET request is successful, the tabs must not be hardcoded, its length should change as per API&quot;,
+          &quot;invocations&quot;: 1,
+          &quot;location&quot;: null,
+          &quot;numPassingAsserts&quot;: 0,
+          &quot;status&quot;: &quot;failed&quot;,
+          &quot;title&quot;: &quot;When the HTTP GET request is successful, the tabs must not be hardcoded, its length should change as per API&quot;,
+          &quot;id&quot;: &quot;RJSCPLTJNZ_TEST_33&quot;
+        }
+      ]
+    }
+  ],
+  &quot;wasInterrupted&quot;: false
+}</div></body></html>
